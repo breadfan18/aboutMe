@@ -72,9 +72,14 @@ nav ul li {
 }
 
 .aboutMeSections li a:hover {
-    background-color: black;
+    background-color: #3d3d5c;
     color: white;
     transition: 0.6s ease;
+}
+
+.aboutMeSections li a:focus {
+    background-color: black;
+    color: white;
 }
 
 
@@ -100,21 +105,17 @@ article div {
     list-style: none;
 }
 
-
-/*article div img {*/
-/*    width: 565px;*/
-/*    height: 362px;*/
-/*}*/
-
 article div img {
     width: 100%;
     max-width: 565px;
     height: auto;
 }
 article div .goals {
+    width: 100%;
+    max-width: 565px;
     height: 200px;
-    width: 565px;
 }
+
 p {
     font-family: Arial, Helvetica, sans-serif;
 }

@@ -14,7 +14,6 @@ function getCity() {
         function (e) {
             let clickedSection = e.target;
             if (clickedSection.innerText === "Intro") {
-                console.log("success");
                 intro.style.display = "block";
                 family.style.display = "none";
                 education.style.display = "none";
