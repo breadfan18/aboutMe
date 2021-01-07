@@ -1,11 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="8911c45d-9bbf-4ce4-8c4e-51ea989deb31" name="Default Changelist" comment="" />
+    <list default="true" id="8911c45d-9bbf-4ce4-8c4e-51ea989deb31" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aboutMe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/aboutMe.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aboutMeStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/aboutMeStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexWebsite/images/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dexWebsite/images/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexWebsite/images/10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dexWebsite/images/10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexWebsite/images/11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dexWebsite/images/11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexWebsite/images/12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dexWebsite/images/12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexWebsite/images/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dexWebsite/images/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexWebsite/images/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dexWebsite/images/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexWebsite/images/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dexWebsite/images/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexWebsite/images/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dexWebsite/images/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexWebsite/images/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dexWebsite/images/6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexWebsite/images/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dexWebsite/images/7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexWebsite/images/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dexWebsite/images/8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexWebsite/images/9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dexWebsite/images/9.jpg" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1mkRfIoSU6NhI3joizbvS2RgGOr" />
   <component name="ProjectViewState">
@@ -23,6 +60,9 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -50,11 +90,28 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610035706487</updated>
-      <workItem from="1610035707534" duration="4937000" />
+      <workItem from="1610035707534" duration="5808000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1472" y="121" key="SettingsEditor" timestamp="1610043796717">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1472" y="121" key="SettingsEditor/0.0.1920.1200/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1610043796717" />
   </component>
 </project>
