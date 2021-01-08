@@ -42,7 +42,6 @@ section {
 nav {
     background-color: rgba(0,0,0,0.1);
     color: #ffffff;
-    padding: 0 0 0 0;
     flex: 0 0 20em; /*em is a unit of font that's adaptive to screen size, rather than px which is fixed*/
 }
 

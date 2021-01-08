@@ -7,6 +7,8 @@ const origin = document.querySelector('.origin');
 const goals = document.querySelector('.myGoals');
 const intro = document.querySelector('.intro');
 
+const fff = document.querySelector('article div');
+
 getCity();
 
 function getCity() {
