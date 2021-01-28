@@ -1,0 +1,17 @@
+body {
+    max-width: 580px;
+    margin: 0 auto;
+}
+.loginSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 580px;
+    border: 10px solid black;
+
+}
+
+#userNameField, #pwdField, #loginSubmit {
+    margin: 0 1em 1em;
+    padding: 2em;
+}
