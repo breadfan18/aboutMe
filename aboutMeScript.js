@@ -80,3 +80,4 @@ function getCity() {
             e.preventDefault();
         }, false);
 }
+
