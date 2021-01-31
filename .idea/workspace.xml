@@ -20,8 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8911c45d-9bbf-4ce4-8c4e-51ea989deb31" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/landingPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/landingPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/landingScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/landingScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landingStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/landingStyle.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +111,7 @@
       <workItem from="1610035707534" duration="8852000" />
       <workItem from="1610135190913" duration="7130000" />
       <workItem from="1611787526446" duration="661000" />
-      <workItem from="1611875294650" duration="6563000" />
+      <workItem from="1611875294650" duration="7828000" />
     </task>
     <servers />
   </component>
@@ -219,6 +220,10 @@
     </state>
     <state x="-1472" y="121" key="SettingsEditor/0.0.1920.1200/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1610043796717" />
     <state x="-1472" y="121" key="SettingsEditor/1920.37.1600.900/0.0.1920.1200/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1611876096363" />
+    <state x="-1295" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1612059590070">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1295" y="241" width="670" height="676" key="search.everywhere.popup/1920.37.1600.900/0.0.1920.1200/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612059590070" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/aboutMe$landingPage_html.dat" NAME="landingPage.html Coverage Results" MODIFIED="1611878601177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="WipCoverageRunner" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

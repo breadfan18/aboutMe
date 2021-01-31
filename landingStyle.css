@@ -23,5 +23,8 @@ body {
 #loginSubmit {
     font-size: 1em;
     font-family: sans-serif;
+}
 
+.error {
+    color: red;
 }
