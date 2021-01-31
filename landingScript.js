@@ -1,4 +1,5 @@
 const userName = "breadfan18";
+const pwd = "Test1234#";
 
 const userNameField = document.querySelector("#userNameField");
 const pwdField = document.querySelector("#pwdField");
