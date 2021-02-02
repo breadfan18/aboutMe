@@ -2,7 +2,6 @@ body {
     max-width: 580px;
     margin: 0 auto;
     background: url("images/bkgrd.jpg");
-
 }
 
 .loginSection {
@@ -10,21 +9,28 @@ body {
     flex-direction: column;
     justify-content: space-between;
     max-width: 580px;
-    /*border: 5px solid black;*/
-    /*box-shadow: 0 0 100px black;*/
-    /*opacity: ;*/
 }
 
 #userNameField, #pwdField, #loginSubmit {
-    margin: 0 1em 1em;
-    padding: 2em;
+    padding: 12px 20px 12px 10px;
+    margin: 8px 0;
 }
 
 #loginSubmit {
-    font-size: 1em;
-    font-family: sans-serif;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
 }
 
+#loginSubmit:hover {
+    background-color: gray;
+    opacity: 50%;
+    color: #000000;
+}
 .error {
     color: red;
     text-align: center;
