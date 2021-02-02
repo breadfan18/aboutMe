@@ -66,17 +66,16 @@ if (bikePrice < 250 && bikeColor === "blue") {
 // Over ten years, the value of the investment increases by 5% each year.
 // In the seventh year, the investment loses 75% instead of increasing. Eeek!
 // Use a for loop to log how many years it has been and how much the investment is worth for each year.
-let investment = 1000;
-for (let i = 1; i <= 10; i++) {
-    if (i === 7) {
-        let loss = investment * 0.75;
-        investment = investment - loss;
-    } else {
-        investment = investment * 1.05;
-    }
-    console.log(investment);
-
-}
+// let investment = 1000;
+// for (let i = 1; i <= 10; i++) {
+//     if (i === 7) {
+//         let loss = investment * 0.75;
+//         investment = investment - loss;
+//     } else {
+//         investment = investment * 1.05;
+//     }
+//     console.log(investment);
+// }
 
 
 // PROBLEM 2
@@ -85,8 +84,17 @@ for (let i = 1; i <= 10; i++) {
 // If the daysUntilTheFinale is evenly divisible by 7, don't log the above message.
 // Instead, log "Only _____ weeks until the last episode!"
 // HINT: You will need to use the modulus (%)
-let daysUntilTheFinale = 30;
-
+// let daysUntilTheFinale = 30;
+// while (daysUntilTheFinale !== 0) {
+//     if (daysUntilTheFinale % 7 === 0) {
+//         console.log("");
+//         console.log("Only " + (daysUntilTheFinale / 7) + " weeks until the last episode");
+//         console.log("");
+//     } else {
+//         console.log(daysUntilTheFinale + " days until the last episode!");
+//     }
+//     daysUntilTheFinale--;
+// }
 
 // PROBLEM 3
 // Firing a laser has a 50% chance of hitting, reducing enemyHealth by 1 each time
@@ -95,3 +103,21 @@ let daysUntilTheFinale = 30;
 // Each time, log how many lasers are left, and how much enemyHealth remains
 let lasers = 10;
 let enemyHealth = 5;
+
+for (let i = 0; i < lasers; i++) {
+    let hitOrMiss = Math.floor(Math.random() * 2);
+    console.log(hitOrMiss);
+
+    if (hitOrMiss === 1) {
+        enemyHealth--;
+    }
+
+    if (enemyHealth === 0) {
+        break;
+    }
+
+    console.log("Lasers Remaining: " + (lasers-i));
+    console.log("Enemy Health: " + enemyHealth);
+
+    console.log("");
+}
