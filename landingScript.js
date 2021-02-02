@@ -5,42 +5,29 @@
 * -
 * */
 
-
-
 const userName = "breadfan18";
 const pwd = "test";
 
 const userNameField = document.querySelector("#userNameField");
 const pwdField = document.querySelector("#pwdField");
 const submitButton = document.querySelector("#loginSubmit");
-const loginSection = document.querySelector(".loginSection");
+const errorSection = document.querySelector("#error");
 
-let wrongUserNameMessageCreated = false;
+let invalidAttemptCounter = 0;
 
 function login() {
     console.log("login function called");
     let userNameEntered = userNameField.value;
-    console.log(userNameEntered);
     let pwdEntered = pwdField.value;
-    console.log(pwdEntered);
-    let errorMessage = document.createElement("p");
-    errorMessage.setAttribute("class", "error");
-    errorMessage.innerHTML = null;
 
-    if (userNameEntered !== userName && !wrongUserNameMessageCreated) {
-        errorMessage.innerHTML = "Wrong Username";
-        loginSection.appendChild(errorMessage);
-        wrongUserNameMessageCreated = true;
-    }else if (userNameEntered === userName && pwdEntered !== pwd) {
-        errorMessage.innerHTML = "Wrong Password";
-        loginSection.appendChild(errorMessage);
-        wrongUserNameMessageCreated = true;
+    if ((userNameEntered !== userName) || (pwdEntered !== pwd)) {
+        invalidAttemptCounter++;
+        errorSection.innerHTML = "Invalid Credentials. ATTEMPT " + invalidAttemptCounter;
+        // invalidCredentials = true;
     }
-}
-
-function clearError() {
-    let errorElement = document.querySelector(".loginSection p");
-    errorElement.remove();
+    else if (userNameEntered === userName && pwdEntered === pwd) {
+        window.location.replace("aboutMePage.html");
+    }
 }
 
 submitButton.addEventListener("click", login, false);

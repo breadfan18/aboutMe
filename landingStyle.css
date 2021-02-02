@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 
 body {
     max-width: 580px;
-    margin: 0 auto;
+    margin: auto;
     background: url("images/bkgrd.jpg");
     font-size: 20px;
-    font-family: 'Poiret One', Helvetica;
+    font-family: Helvetica;
 }
 
 .loginSection {
@@ -35,7 +34,8 @@ body {
     opacity: 50%;
     color: #000000;
 }
-.error {
+
+#error {
     color: red;
     text-align: center;
 }
@@ -43,3 +43,4 @@ body {
 #userNameField::placeholder, #pwdField::placeholder {
     font-size: 15px;
 }
+
