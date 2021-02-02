@@ -1,6 +1,7 @@
 const playerInputField = document.querySelector("header input");
 const startGameButton = document.querySelector("header button");
-const errorPrompt = document.querySelector("header p");
+const errorPrompt = document.querySelector(".enterNamePrompt");
+const gameButtons = document.querySelector(".gameButtons");
 
 let playerNameEntered = null;
 
@@ -19,8 +20,9 @@ computer.currentChoice = choices[rand];
 player.currentChoice = choices[1];
 
 function runGame(playerName) {
-    console.log(playerName);
+    errorPrompt.innerHTML = "";
 
+    gameButtons.style.display = "inline";
     if (computer.currentChoice === player.currentChoice) {
         console.log("It's a tie! Both Computer and " + playerName + " chose " + computer.currentChoice);
     } else if (computer.currentChoice === choices[0]) {
@@ -48,7 +50,7 @@ function runGame(playerName) {
 startGameButton.addEventListener("click", function () {
     playerNameEntered = playerInputField.value;
     if (playerNameEntered === "") {
-        errorPrompt.innerHTML = "Please enter your name to start."
+        errorPrompt.innerHTML = "Please enter your name to start";
     } else {
         runGame(playerNameEntered);
     }
