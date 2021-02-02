@@ -21,6 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8911c45d-9bbf-4ce4-8c4e-51ea989deb31" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/practice/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/practice/testjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/practice/testjs.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,7 +111,7 @@
       <workItem from="1610035707534" duration="8852000" />
       <workItem from="1610135190913" duration="7130000" />
       <workItem from="1611787526446" duration="661000" />
-      <workItem from="1611875294650" duration="25602000" />
+      <workItem from="1611875294650" duration="26512000" />
     </task>
     <servers />
   </component>
@@ -219,10 +220,10 @@
     </state>
     <state x="-1472" y="121" key="SettingsEditor/0.0.1920.1200/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1610043796717" />
     <state x="-1472" y="121" key="SettingsEditor/1920.37.1600.900/0.0.1920.1200/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1611876096363" />
-    <state x="-1295" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1612231511415">
+    <state x="-1295" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1612294690908">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1295" y="241" width="670" height="676" key="search.everywhere.popup/1920.37.1600.900/0.0.1920.1200/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612231511415" />
+    <state x="-1295" y="241" width="670" height="676" key="search.everywhere.popup/1920.37.1600.900/0.0.1920.1200/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1612294690908" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/aboutMe$landingPage_html.dat" NAME="landingPage.html Coverage Results" MODIFIED="1611878601177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="WipCoverageRunner" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
