@@ -18,10 +18,14 @@ const loginSection = document.querySelector(".loginSection");
 let wrongUserNameMessageCreated = false;
 
 function login() {
+    console.log("login function called");
     let userNameEntered = userNameField.value;
+    console.log(userNameEntered);
     let pwdEntered = pwdField.value;
+    console.log(pwdEntered);
     let errorMessage = document.createElement("p");
     errorMessage.setAttribute("class", "error");
+    errorMessage.innerHTML = null;
 
     if (userNameEntered !== userName && !wrongUserNameMessageCreated) {
         errorMessage.innerHTML = "Wrong Username";
@@ -32,6 +36,11 @@ function login() {
         loginSection.appendChild(errorMessage);
         wrongUserNameMessageCreated = true;
     }
+}
+
+function clearError() {
+    let errorElement = document.querySelector(".loginSection p");
+    errorElement.remove();
 }
 
 submitButton.addEventListener("click", login, false);
