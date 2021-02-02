@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
 body {
     max-width: 580px;
     margin: 0 auto;
     background: url("images/bkgrd.jpg");
+    font-size: 20px;
+    font-family: 'Poiret One', Helvetica;
 }
 
 .loginSection {
@@ -34,4 +38,8 @@ body {
 .error {
     color: red;
     text-align: center;
+}
+
+#userNameField::placeholder, #pwdField::placeholder {
+    font-size: 15px;
 }
