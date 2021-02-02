@@ -15,6 +15,7 @@ body {
 }
 
 #userNameField, #pwdField, #loginSubmit {
+    font-size: 20px;
     padding: 12px 20px 12px 10px;
     margin: 8px 0;
 }
@@ -36,11 +37,14 @@ body {
 }
 
 #error {
+    margin: 0;
+    padding: 10px;
     color: red;
     text-align: center;
+    /*background-color: #222222;*/
 }
 
 #userNameField::placeholder, #pwdField::placeholder {
-    font-size: 15px;
+    font-size: 16px;
 }
 

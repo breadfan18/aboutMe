@@ -23,7 +23,7 @@ function login() {
     if ((userNameEntered !== userName) || (pwdEntered !== pwd)) {
         invalidAttemptCounter++;
         errorSection.innerHTML = "Invalid Credentials. ATTEMPT " + invalidAttemptCounter;
-        // invalidCredentials = true;
+        errorSection.style.backgroundColor = "black";
     }
     else if (userNameEntered === userName && pwdEntered === pwd) {
         window.location.replace("aboutMePage.html");
@@ -31,3 +31,9 @@ function login() {
 }
 
 submitButton.addEventListener("click", login, false);
+pwdField.addEventListener("keyup", function (event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        submitButton.click();
+    }
+}, false);
