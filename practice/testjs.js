@@ -1,3 +1,8 @@
+const playerInputField = document.querySelector("header input");
+const startGameButton = document.querySelector("header button");
+
+let playerNameEntered = null;
+
 let player = {
     currentChoice: null
 };
@@ -13,6 +18,7 @@ computer.currentChoice = choices[rand];
 player.currentChoice = choices[1];
 
 function runGame(playerName) {
+    console.log(playerName);
     if (computer.currentChoice === player.currentChoice) {
         console.log("It's a tie! Both Computer and " + playerName + " chose " + computer.currentChoice);
     } else if (computer.currentChoice === choices[0]) {
@@ -37,9 +43,17 @@ function runGame(playerName) {
 }
 
 
-runGame("Swaroop");
+startGameButton.addEventListener("click", function () {
+    playerNameEntered = playerInputField.value;
+    if (playerNameEntered == "") {
+        console.log("Please enter your name");
+    } else {
+        runGame(playerNameEntered);
+    }
+}, false);
 
 
 
-
+//To do:
+//- after clicking Start Game, Show Game screen. 3 buttons, and everything that follows.
 
