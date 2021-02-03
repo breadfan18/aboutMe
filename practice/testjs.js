@@ -3,6 +3,7 @@ const startGameButton = document.querySelector("header button");
 const errorPrompt = document.querySelector(".enterNamePrompt");
 const gameButtons = document.querySelector(".gameSection");
 const welcomeField = document.querySelector("#welcome");
+const winnerMsg = document.querySelector(".winnerMsg");
 
 let playerNameEntered = null;
 
@@ -20,30 +21,43 @@ let rand = Math.floor(Math.random() * 3);
 computer.currentChoice = choices[rand];
 player.currentChoice = choices[1];
 
+const winningMessageElement = document.createElement("h2");
+winningMessageElement.setAttribute("class", "displayText");
+
+function display(winner, playerName, computerChoice, playerChoice) {
+    if (winner === "Tie") {
+        winningMessageElement.innerHTML = "It's a tie! Both Computer and " + playerName + " chose " + computer.currentChoice;
+    }
+    else {
+        winningMessageElement.innerHTML = winner + " wins! The computer chose " + computerChoice + " and the " + playerName + "  chose " + playerChoice;
+    }
+    document.body.appendChild(winningMessageElement);
+}
+
 function runGame(playerName) {
     errorPrompt.innerHTML = "";
 
     welcomeField.innerHTML = "Welcome " + playerName + ". Let's play <span class='gameNamme'>Lapis, Papyrus, Scalpellus</span>";
     gameButtons.style.display = "flex";
     if (computer.currentChoice === player.currentChoice) {
-        console.log("It's a tie! Both Computer and " + playerName + " chose " + computer.currentChoice);
+        display("Tie", playerName, computer.currentChoice, player.currentChoice);
     } else if (computer.currentChoice === choices[0]) {
         if (player.currentChoice === choices[1]) {
-            console.log(playerName + " wins! Computer chose " + computer.currentChoice + "and " + playerName + "chose " + player.currentChoice);
+            display(playerName, playerName, computer.currentChoice, player.currentChoice);
         } else if (player.currentChoice === choices[2]) {
-            console.log("Computer wins! Computer chose " + computer.currentChoice + "and " + playerName + "chose " + player.currentChoice);
+            display("Computer", playerName, computer.currentChoice, player.currentChoice);
         }
     } else if (computer.currentChoice === choices[1]) {
         if (player.currentChoice === choices[0]) {
-            console.log("Computer wins! Computer chose " + computer.currentChoice + "and " + playerName + "chose " + player.currentChoice);
+            display("Computer", playerName, computer.currentChoice, player.currentChoice);
         } else if (player.currentChoice === choices[2]) {
-            console.log(playerName + " wins! Computer chose " + computer.currentChoice + "and " + playerName + "chose " + player.currentChoice);
+            display(playerName, playerName, computer.currentChoice, player.currentChoice);
         }
     } else if (computer.currentChoice === choices[2]) {
         if (player.currentChoice === choices[0]) {
-            console.log(playerName + " wins! Computer chose " + computer.currentChoice + "and " + playerName + "chose " + player.currentChoice);
+            display(playerName, playerName, computer.currentChoice, player.currentChoice);
         } else if (player.currentChoice === choices[1]) {
-            console.log("Computer wins! Computer chose " + computer.currentChoice + "and " + playerName + "chose " + player.currentChoice);
+            display("Computer", playerName, computer.currentChoice, player.currentChoice);
         }
     }
 }
