@@ -19,7 +19,6 @@ const choices = ["Lapis", "Papyrus", "Scalpellus"];
 let rand = Math.floor(Math.random() * 3);
 
 computer.currentChoice = choices[rand];
-player.currentChoice = choices[1];
 
 const winningMessageElement = document.createElement("h2");
 winningMessageElement.setAttribute("class", "displayText");
@@ -63,25 +62,37 @@ function runGame(playerName, computerChoice, playerChoice) {
     }
 }
 
+function setPlayerChoice(e) {
+    let imgAlt = e.target.alt;
+    let buttonText = e.target.innerHTML;
+    let sectionId = e.target.id;
+
+    if (imgAlt === "Lapis" || buttonText === "Lapis" || sectionId === "lapisSection") {
+        player.currentChoice = choices[0];
+    }
+    else if (imgAlt === "Papyrus" || buttonText === "Papyrus" || sectionId === "papySection") {
+        player.currentChoice = choices[1];
+    }
+    else if (imgAlt === "Scalpellus" || buttonText === "Scalpellus" || sectionId === "scalpSection") {
+        player.currentChoice = choices[2];
+    }
+    runGame(playerNameEntered, computer.currentChoice, player.currentChoice);
+}
+
 
 startGameButton.addEventListener("click", function () {
     playerNameEntered = playerInputField.value;
     if (playerNameEntered === "") {
         errorPrompt.innerHTML = "Please enter your name to start";
-    } else {
-        runGame(playerNameEntered, player.currentChoice, computer.currentChoice);
     }
 }, false);
 
-function setPlayerChoice(e) {
 
-}
 
 //To do:
 //- after clicking Start Game, Start Game button changes to Reset Game, change the id attribute etc.
 
 
-document.querySelector("section").addEventListener("click",
-    function (e) {
-        console.log(e.target);
-    });
+document.querySelector(".gameSection div:nth-child(1)").addEventListener("click", setPlayerChoice, false);
+document.querySelector(".gameSection div:nth-child(2)").addEventListener("click", setPlayerChoice, false);
+document.querySelector(".gameSection div:nth-child(3)").addEventListener("click", setPlayerChoice, false);
