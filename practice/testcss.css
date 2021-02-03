@@ -55,3 +55,7 @@ img {
     background-color: white;
     cursor: pointer;
 }
+
+#player, #computer {
+    text-decoration: underline;
+}

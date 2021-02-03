@@ -26,38 +26,39 @@ winningMessageElement.setAttribute("class", "displayText");
 
 function display(winner, playerName, computerChoice, playerChoice) {
     if (winner === "Tie") {
-        winningMessageElement.innerHTML = "It's a tie! Both Computer and " + playerName + " chose " + computer.currentChoice;
+        winningMessageElement.innerHTML = "It's a tie! Both Computer and " + playerName + " chose " + computerChoice;
     }
     else {
-        winningMessageElement.innerHTML = winner + " wins! The computer chose " + computerChoice + " and the " + playerName + "  chose " + playerChoice;
+        winningMessageElement.innerHTML = winner + " wins! The <span id='computer'>computer</span> chose " +
+            computerChoice + " and <span id='player'>" + playerName + "</span>  chose " + playerChoice;
     }
     document.body.appendChild(winningMessageElement);
 }
 
-function runGame(playerName) {
+function runGame(playerName, computerChoice, playerChoice) {
     errorPrompt.innerHTML = "";
 
-    welcomeField.innerHTML = "Welcome " + playerName + ". Let's play <span class='gameNamme'>Lapis, Papyrus, Scalpellus</span>";
+    welcomeField.innerHTML = "Welcome " + playerName + ". Let's play <span class='gameName'>Lapis, Papyrus, Scalpellus</span>";
     gameButtons.style.display = "flex";
-    if (computer.currentChoice === player.currentChoice) {
-        display("Tie", playerName, computer.currentChoice, player.currentChoice);
-    } else if (computer.currentChoice === choices[0]) {
-        if (player.currentChoice === choices[1]) {
-            display(playerName, playerName, computer.currentChoice, player.currentChoice);
-        } else if (player.currentChoice === choices[2]) {
-            display("Computer", playerName, computer.currentChoice, player.currentChoice);
+    if (computerChoice === playerChoice) {
+        display("Tie", playerName, computerChoice, playerChoice);
+    } else if (computerChoice === choices[0]) {
+        if (playerChoice === choices[1]) {
+            display(playerName, playerName, computerChoice, playerChoice);
+        } else if (playerChoice === choices[2]) {
+            display("Computer", playerName, computerChoice, playerChoice);
         }
-    } else if (computer.currentChoice === choices[1]) {
-        if (player.currentChoice === choices[0]) {
-            display("Computer", playerName, computer.currentChoice, player.currentChoice);
-        } else if (player.currentChoice === choices[2]) {
-            display(playerName, playerName, computer.currentChoice, player.currentChoice);
+    } else if (computerChoice === choices[1]) {
+        if (playerChoice === choices[0]) {
+            display("Computer", playerName, computerChoice, playerChoice);
+        } else if (playerChoice === choices[2]) {
+            display(playerName, playerName, computerChoice, playerChoice);
         }
-    } else if (computer.currentChoice === choices[2]) {
-        if (player.currentChoice === choices[0]) {
-            display(playerName, playerName, computer.currentChoice, player.currentChoice);
-        } else if (player.currentChoice === choices[1]) {
-            display("Computer", playerName, computer.currentChoice, player.currentChoice);
+    } else if (computerChoice === choices[2]) {
+        if (playerChoice === choices[0]) {
+            display(playerName, playerName, computerChoice, playerChoice);
+        } else if (playerChoice === choices[1]) {
+            display("Computer", playerName, computerChoice, playerChoice);
         }
     }
 }
@@ -68,12 +69,19 @@ startGameButton.addEventListener("click", function () {
     if (playerNameEntered === "") {
         errorPrompt.innerHTML = "Please enter your name to start";
     } else {
-        runGame(playerNameEntered);
+        runGame(playerNameEntered, player.currentChoice, computer.currentChoice);
     }
 }, false);
 
+function setPlayerChoice(e) {
 
+}
 
 //To do:
-//- after clicking Start Game, Show Game screen. 3 buttons, and everything that follows.
+//- after clicking Start Game, Start Game button changes to Reset Game, change the id attribute etc.
 
+
+document.querySelector("section").addEventListener("click",
+    function (e) {
+        console.log(e.target);
+    });
