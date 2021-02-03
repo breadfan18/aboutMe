@@ -24,10 +24,10 @@ winningMessageElement.setAttribute("class", "displayText");
 
 function display(winner, playerName, computerChoice, playerChoice) {
     if (winner === "Tie") {
-        winningMessageElement.innerHTML = "It's a tie! Both <span id='computer'>Computer</span>" + "and <span id='player'>" + playerName + "</span> chose <span id='gameName'>" + computerChoice + "</span>";
+        winningMessageElement.innerHTML = "It's a tie!</br> Both <span id='computer'>Computer</span>" + "and <span id='player'>" + playerName + "</span> chose <span id='gameName'>" + computerChoice + "</span>";
     }
     else {
-        winningMessageElement.innerHTML = "<span id='player'>" + winner + "</span> wins! The <span id='computer'>Computer</span> chose <span id='gameName'>" +
+        winningMessageElement.innerHTML = "<span id='player'>" + winner + "</span> wins!</br> The <span id='computer'>Computer</span> chose <span id='gameName'>" +
             computerChoice + "</span> and <span id='player'>" + playerName + "</span>  chose <span id='gameName'>" + playerChoice + "</span>";
     }
     document.body.appendChild(winningMessageElement);
@@ -82,6 +82,7 @@ startGameButton.addEventListener("click", function () {
         errorPrompt.innerHTML = "Please enter your name to start";
     } else {
         welcomeField.innerHTML = "Hey <span id='player'>" + playerNameEntered + "</span>. Let's play <span id='gameName'>Lapis, Papyrus, Scalpellus</span>";
+        document.querySelector("h3").style.display = "block";
         welcomeField.style.display = "block";
         gameButtons.style.display = "flex";
         document.querySelector("header").remove();

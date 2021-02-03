@@ -4,6 +4,12 @@ body {
     margin: 0 auto;
     font-family: 'Potta One', Helvetica, serif;
     text-align: center;
+    background: url("https://previews.123rf.com/images/phokin/phokin1706/phokin170600296/80158669-black-and-white-brick-wall-texture-background-brick-wallpaper-abstract-paint-.jpg");
+    background-size: cover;
+}
+
+#welcomeText {
+    text-shadow: 2px 2px #ff0000;
 }
 
 h1 {
@@ -23,11 +29,14 @@ header {
 
 header img {
     width: 100%;
+    opacity: 80%;
 }
 
 input[type = "text"], #startGame{
-    padding: 10px;
+    /*width: 10em;*/
+    padding: 15px;
     font-size: 20px;
+    border: 1px solid #ccc;
 }
 
 #startGame {
@@ -36,7 +45,7 @@ input[type = "text"], #startGame{
 }
 
 h3 {
-    padding: 20px;
+    /*padding: 20px;*/
     display: none;
 }
 
@@ -70,14 +79,16 @@ header, .gameSection, h3 {
 .buttons {
     padding: 10px 2px;
     border-radius: 5px;
-    background-color: #4CAF50;
+    background-color: rgba(255, 0, 0, 0.6);
     color: white;
     font-family: 'Potta One', cursive;
     margin: 10px 0 0 0;
+    font-size: 25px;
 }
 
 .buttons:hover {
     color: black;
+    text-shadow: 2px 2px #ff0000;
     background-color: white;
     cursor: pointer;
 }
@@ -88,15 +99,21 @@ header, .gameSection, h3 {
 }
 
 .buttonSegments:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 0, 0, 0.1);
     cursor: pointer;
 }
 
 .buttonSegments:focus {
-    background-color: rgba(122, 0, 0, 0.1);
+    background-color: rgba(122, 0, 0, 0.5);
 }
 
 #gameName {
     font-size: 40px;
-    color: #4CAF50;
+    color: black;
+    text-shadow: 2px 2px #ff0000;
+}
+
+.displayText {
+    background: rgba(255, 0, 0, 0.1);
+    padding: 20px;
 }
