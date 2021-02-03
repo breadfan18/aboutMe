@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');*/
 
 body {
     margin: 0 auto;
@@ -21,15 +21,18 @@ header {
     text-align: center;
 }
 
-
 header img {
     width: 100%;
-    /*text-align: center;*/
-    /*margin: 0 auto;*/
 }
 
-input[type = "text"] {
-    border: 5px solid red;
+input[type = "text"], #startGame{
+    padding: 10px;
+    font-size: 20px;
+}
+
+#startGame {
+    background: #222222;
+    color: white;
 }
 
 h3 {
