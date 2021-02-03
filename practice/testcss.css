@@ -27,6 +27,7 @@ header, .gameSection, h3 {
 .gameSection {
     display: flex;
     text-align: center;
+    margin-top: 30px;
 }
 
 .buttonSegments {
@@ -34,8 +35,10 @@ header, .gameSection, h3 {
     flex-direction: column;
     justify-content: center;
     margin: auto;
+    padding: 20px;
 
 }
+
 img {
     width: 200px;
     height: 200px;
@@ -58,4 +61,13 @@ img {
 
 #player, #computer {
     text-decoration: underline;
+}
+
+.buttonSegments:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.buttonSegments:focus {
+    background-color: rgba(122, 0, 0, 0.1);
 }
