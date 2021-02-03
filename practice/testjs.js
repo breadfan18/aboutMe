@@ -3,7 +3,6 @@ const startGameButton = document.querySelector("header button");
 const errorPrompt = document.querySelector(".enterNamePrompt");
 const gameButtons = document.querySelector(".gameSection");
 const welcomeField = document.querySelector("#welcome");
-const winnerMsg = document.querySelector(".winnerMsg");
 
 let playerNameEntered = null;
 
@@ -25,20 +24,18 @@ winningMessageElement.setAttribute("class", "displayText");
 
 function display(winner, playerName, computerChoice, playerChoice) {
     if (winner === "Tie") {
-        winningMessageElement.innerHTML = "It's a tie! Both Computer and " + playerName + " chose " + computerChoice;
+        winningMessageElement.innerHTML = "It's a tie! Both <span id='computer'>Computer</span>" + "and <span id='player'>" + playerName + "</span> chose <span id='gameName'>" + computerChoice + "</span>";
     }
     else {
-        winningMessageElement.innerHTML = winner + " wins! The <span id='computer'>computer</span> chose " +
-            computerChoice + " and <span id='player'>" + playerName + "</span>  chose " + playerChoice;
+        winningMessageElement.innerHTML = "<span id='player'>" + winner + "</span> wins! The <span id='computer'>Computer</span> chose <span id='gameName'>" +
+            computerChoice + "</span> and <span id='player'>" + playerName + "</span>  chose <span id='gameName'>" + playerChoice + "</span>";
     }
     document.body.appendChild(winningMessageElement);
 }
 
 function runGame(playerName, computerChoice, playerChoice) {
-    errorPrompt.innerHTML = "";
-
-    welcomeField.innerHTML = "Welcome " + playerName + ". Let's play <span class='gameName'>Lapis, Papyrus, Scalpellus</span>";
     gameButtons.style.display = "flex";
+
     if (computerChoice === playerChoice) {
         display("Tie", playerName, computerChoice, playerChoice);
     } else if (computerChoice === choices[0]) {
@@ -84,19 +81,12 @@ startGameButton.addEventListener("click", function () {
     if (playerNameEntered === "") {
         errorPrompt.innerHTML = "Please enter your name to start";
     } else {
-
         welcomeField.innerHTML = "Hey <span id='player'>" + playerNameEntered + "</span>. Let's play <span id='gameName'>Lapis, Papyrus, Scalpellus</span>";
         welcomeField.style.display = "block";
         gameButtons.style.display = "flex";
         document.querySelector("header").remove();
     }
 }, false);
-
-
-
-//To do:
-//- after clicking Start Game, Start Game button changes to Reset Game, change the id attribute etc.
-
 
 document.querySelector(".gameSection div:nth-child(1)").addEventListener("click", setPlayerChoice, false);
 document.querySelector(".gameSection div:nth-child(2)").addEventListener("click", setPlayerChoice, false);
