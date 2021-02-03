@@ -20,10 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8911c45d-9bbf-4ce4-8c4e-51ea989deb31" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/practice/domManip.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/domManipJS.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/practice/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/testcss.css" beforeDir="false" afterPath="$PROJECT_DIR$/practice/testcss.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/testjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/practice/testjs.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,9 +32,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="HTML File" />
         <option value="JavaScript File" />
-        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -112,7 +111,7 @@
       <workItem from="1610035707534" duration="8852000" />
       <workItem from="1610135190913" duration="7130000" />
       <workItem from="1611787526446" duration="661000" />
-      <workItem from="1611875294650" duration="29511000" />
+      <workItem from="1611875294650" duration="33235000" />
     </task>
     <servers />
   </component>
