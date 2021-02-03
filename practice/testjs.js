@@ -79,11 +79,16 @@ function setPlayerChoice(e) {
     runGame(playerNameEntered, computer.currentChoice, player.currentChoice);
 }
 
-
 startGameButton.addEventListener("click", function () {
     playerNameEntered = playerInputField.value;
     if (playerNameEntered === "") {
         errorPrompt.innerHTML = "Please enter your name to start";
+    } else {
+
+        welcomeField.innerHTML = "Hey <span id='player'>" + playerNameEntered + "</span>. Let's play <span id='gameName'>Lapis, Papyrus, Scalpellus</span>";
+        welcomeField.style.display = "block";
+        gameButtons.style.display = "flex";
+        document.querySelector("header").remove();
     }
 }, false);
 

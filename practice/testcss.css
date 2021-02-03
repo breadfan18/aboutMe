@@ -1,4 +1,4 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
 
 body {
     margin: 0 auto;
@@ -70,7 +70,7 @@ header, .gameSection, h3 {
 .buttons {
     padding: 10px 2px;
     border-radius: 5px;
-    background-color: #0F1B2C;
+    background-color: #4CAF50;
     color: white;
     font-family: 'Potta One', cursive;
     margin: 10px 0 0 0;
@@ -93,4 +93,9 @@ header, .gameSection, h3 {
 
 .buttonSegments:focus {
     background-color: rgba(122, 0, 0, 0.1);
+}
+
+#gameName {
+    font-size: 30px;
+    color: #4CAF50;
 }
