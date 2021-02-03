@@ -1,7 +1,8 @@
 const playerInputField = document.querySelector("header input");
 const startGameButton = document.querySelector("header button");
 const errorPrompt = document.querySelector(".enterNamePrompt");
-const gameButtons = document.querySelector(".gameButtons");
+const gameButtons = document.querySelector(".gameSection");
+const welcomeField = document.querySelector("#welcome");
 
 let playerNameEntered = null;
 
@@ -22,7 +23,8 @@ player.currentChoice = choices[1];
 function runGame(playerName) {
     errorPrompt.innerHTML = "";
 
-    gameButtons.style.display = "inline";
+    welcomeField.innerHTML = "Welcome " + playerName + ". Let's play <span class='gameNamme'>Lapis, Papyrus, Scalpellus</span>";
+    gameButtons.style.display = "flex";
     if (computer.currentChoice === player.currentChoice) {
         console.log("It's a tie! Both Computer and " + playerName + " chose " + computer.currentChoice);
     } else if (computer.currentChoice === choices[0]) {
