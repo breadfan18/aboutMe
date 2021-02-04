@@ -90,7 +90,15 @@ addButton.addEventListener("click", addToList);
 // You will have to modify the code you've written above!
 
 
+console.log("test");
 
+const cities = ['Tokyo', 'New York', 'Mexico City', 'Seoul'];
+const reverse = [];
 
+while (cities.length > 0) {
+    reverse.push(cities.pop());
 
+}
+
+console.log(reverse);
 
